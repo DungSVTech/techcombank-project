@@ -1,0 +1,1 @@
+msiexec /i C:\xdr_win_x64.msi /l*v C:\cortexxdrinstall.log /qn

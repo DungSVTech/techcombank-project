@@ -1,0 +1,16 @@
+---
+- name: Copy and Install XDR agent
+  hosts: 
+  remote_user:
+  become: true
+  tasks:
+    - name: copy key
+      ansible.builtin.copy:
+        src: ./cortex-xdr-agent.asc
+        dest: 
+    
+    - name: download file installation
+      command: wget ...
+
+    - name: run script to install
+      command: ./install_linux.sh
